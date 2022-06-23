@@ -4,15 +4,7 @@ import jdk.jshell.spi.ExecutionControl;
 
 import java.time.LocalDateTime;
 
-public class ReferenceBook implements LibraryItem {
-    String author;
-    LocalDateTime borrowDate;
-    String borrower;
-    int checkOutDurationInDays;
-    String libraryId;
-    int pages;
-    String title;
-
+public class ReferenceBook extends LibraryItemAfter {
 
     @Override
     public String getAuthor() {

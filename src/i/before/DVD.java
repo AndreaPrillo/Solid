@@ -3,14 +3,8 @@ package i.before;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class DVD implements LibraryItem {
-    String author;
-    LocalDateTime borrowDate;
-    String borrower;
-    int checkOutDurationInDays;
-    String libraryId;
-    int pages;
-    String title;
+public class DVD extends LibraryItemAfter {
+
     List<String> actors;
     int runtimeInMinutes;
 

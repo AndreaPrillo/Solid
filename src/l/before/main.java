@@ -12,7 +12,8 @@ public class main {
 
         employee.firstName = "Wilson";
         employee.lastName = "Lim";
-        employee.assignManager(accountingVP);
+         employee=(CEO)employee;
+        ((CEO) employee).assignManager(accountingVP);
         employee.calculatePerHourRate(2);
 
         System.out.println(String.format("%s salary is %s/hour", employee.firstName, employee.salary));

@@ -2,14 +2,7 @@ package i.before;
 
 import java.time.LocalDateTime;
 
-public class Book implements LibraryItem {
-    String author;
-    LocalDateTime borrowDate;
-    String borrower;
-    int checkOutDurationInDays;
-    String libraryId;
-    int pages;
-    String title;
+public class Book extends LibraryItemAfter {
 
 
     @Override

@@ -2,16 +2,8 @@ package i.before;
 
 import java.time.LocalDateTime;
 
-public class AudioBook implements LibraryItem {
-    String author;
-    LocalDateTime borrowDate;
-    String borrower;
-    int checkOutDurationInDays;
-    String libraryId;
-    int pages;
-    String title;
+public class AudioBook extends LibraryItemAfter {
     int runtimeInMinutes;
-
 
     @Override
     public String getAuthor() {

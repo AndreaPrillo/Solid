@@ -16,13 +16,9 @@ public class main {
         System.out.println("What is your last name: ");
         person.setLastName(reader.next());
 
-        if (person.getFirstName() == null || person.getFirstName().isEmpty()) {
-            System.out.println("You did not give us a valid first name!");
-        }
-
-        if (person.getLastName() == null || person.getLastName().isEmpty()) {
-            System.out.println("You did not give us a valid last name!");
-        }
+        Validate validator=new Validate();
+        validator.validateFirstName(person);
+        validator.validateLastName(person);
 
         System.out.println(String.format("Your username is %s %s", person.getFirstName(), person.getLastName()));
 

@@ -1,6 +1,8 @@
 package l.before;
 
-public class CEO extends Employee {
+public class CEO extends Employee implements AssignManager {
+
+
 
     @Override
     public void calculatePerHourRate(int rank) {
@@ -9,12 +11,12 @@ public class CEO extends Employee {
         salary = baseAmount * rank;
     }
 
+    public void fireSomeone() {
+        System.out.println("You're Fired!");
+    }
+
     @Override
     public void assignManager(Employee manager) {
         throw new UnsupportedOperationException("This CEO has no manager");
-    }
-
-    public void fireSomeone() {
-        System.out.println("You're Fired!");
     }
 }
